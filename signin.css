@@ -1,0 +1,142 @@
+body{
+
+    margin: 0;
+    padding: 0;
+    background: #34495e;
+    font-family: sans-serif;
+}
+
+.box {
+
+    width: 350px;
+    height: 390px;
+    background: #191919;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 8px;
+
+}
+
+.box h1{
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+
+}
+
+.box input[type="text"],.box input[type="password"]
+{
+
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px ;
+    transition: 0.25s;
+}
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+
+    width: 280px;
+    border-color: #2ecc71;
+
+}
+
+.box input[type="submit"]{
+
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px ;
+    transition: 0.25s;
+    cursor: pointer;
+
+}
+a{
+
+    text-decoration: none;
+
+}
+
+.box input[type="button"]:hover{
+
+    background:#2ecc71;
+    text-decoration: none;
+
+}
+
+.box input[type="button"]{
+
+    text-decoration: none;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px ;
+    transition: 0.25s;
+    cursor: pointer;
+
+}
+
+.box input[type="submit"]:hover{
+
+    background:#2ecc71;
+}
+
+#message {
+    display:none;
+    background: #191919;
+    color: #000;
+    position: fixed;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    bottom: 250px;
+    left: 40px;
+    padding-left: 20px;
+    color: white;
+}
+
+#message p {
+    padding-left: 40px;
+    font-size: 15px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: #2ecc71;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
